@@ -9,7 +9,7 @@ To try out:
 2. Inside the directory, run `ruby websocket_server.rb` to start the server.
 3. Then open up your latest browser (Google Chrome it is ;)
 
- (I could set up a simple web page with client-side socket Javascript yet, so let's use the good old JavaScript console)
+ (I couldn't set up a simple web page with client-side socket Javascript yet, so let's use the good old JavaScript console)
 
 4. Go to any web page - say google.com
 5. Open up the JavaScript console - (View -> Developer -> JavaScript Console)
