@@ -1,0 +1,26 @@
+Experimental WebSocket server based on EventMachine
+(Shamelessly pulled lot of code and HTTP parser from Marc-Andre Cournoyer's awesome Thin Web Server )
+
+This currently only act as an echo server
+
+To try out:
+
+1. Get a clone of this code.
+2. Inside the directory, run `ruby websocket_server.rb` to start the server.
+3. Then open up your latest browser (Google Chrome it is ;)
+
+ (I could set up a simple web page with client-side socket Javascript yet, so let's use the good old JavaScript console)
+
+4. Go to any web page - say google.com
+5. Open up the JavaScript console - (View -> Developer -> JavaScript Console)
+
+6. Enter the following code to create the client-side socket
+
+ws = new WebSocket("ws://localhost:2200");
+ws.onmessage = function(ev) { console.log("received " + ev.data ); }
+ws.send("hello")
+
+7. Now you got a simple echo server working via WebSockets!
+
+This is just for experimental use, nothing ground breaking here..(but I'm working on more practical examples)  
+
